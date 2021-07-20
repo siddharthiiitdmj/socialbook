@@ -79,14 +79,10 @@ nav{
 }
 .left-sidebar{
     flex-basis: 25%;
-    /* position: sticky; */
-    top: 70px;
     align-self: flex-start;
 }
 .right-sidebar{
     flex-basis: 25%;
-    /* position: sticky; */
-    top: 70px;
     align-self: flex-start;
     background: white;
     padding: 1.25rem;
