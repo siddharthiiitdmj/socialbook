@@ -79,11 +79,15 @@ nav{
 }
 .left-sidebar{
     flex-basis: 25%;
+    position: sticky;
+    top: 4.4rem;
     align-self: flex-start;
 }
 .right-sidebar{
     flex-basis: 25%;
     align-self: flex-start;
+    position: sticky;
+    top: 4.4rem;
     background: white;
     padding: 1.25rem;
     border-radius: 0.25rem;
@@ -202,7 +206,6 @@ nav{
     flex-basis: 18%;
     padding-top: 32%;
     position: relative;
-    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/status-1.png);
     background-position: center;
     background-size: cover;
     border-radius: 0.6rem;
@@ -213,7 +216,7 @@ nav{
     border-radius: 50%;
     top: 0.6rem;
     left: 0.6rem;
-    border-radius: 5px solid #626262;
+    border: 5px solid #1876f2;
 }
 .story p{
     position: absolute;
@@ -222,6 +225,9 @@ nav{
     text-align: center;
     color: white;
     font-size: 0.9rem;
+}
+.story1{
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/status-1.png);
 }
 .story2{
     background-image: url(images/status-2.png);
@@ -234,4 +240,140 @@ nav{
 }
 .story5{
     background-image: url(images/status-5.png);
+}
+.story.story1 img{
+    top: 62%;
+    left: 30%;
+    border: 0;
+    width: 2.2rem;
+}
+
+.write-post{
+    width: 100%;
+    background: white;
+    border-radius: 0.38rem;
+    padding: 1.25rem;
+    color: #626262;
+}
+.user-profile{
+    display: flex;
+    align-items: center;
+}
+.user-profile img{
+    width: 2.85rem;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+}
+.user-profile p{
+    margin-bottom: -0.3rem;
+    font-weight: 500;
+}
+.user-profile small{
+    font-size: 0.75rem;
+}
+
+.post-input{
+    padding-left: 3.5rem;
+    padding-top: 1.25rem;
+}
+.post-input textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    resize: none;
+}
+.post-links{
+    display: flex;
+    margin-top: 0.6rem;
+}
+.post-links a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #626262;
+    margin-right: 1.9rem;
+    font-size: 0.8rem;
+}
+.post-links a img{
+    width: 1.25rem;
+    margin-right: 0.6rem;
+}
+
+.post{
+    width: 100%;
+    background: white;
+    border-radius: 0.4rem;
+    padding: 1.25rem;
+    color: #626262;
+    margin: 1.25rem 0;
+}
+.user-profile span{
+    font-size: 0.8rem;
+    color: #9a9a9a;
+    padding-top: 1px;
+}
+.post-text{
+    color: #9a9a9a;
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+.post-text span{
+    color: #626262;
+    font-weight: 500;
+}
+.post-text a{
+    color: #1876f2;
+    text-decoration: none;
+}
+.post-img{
+    width: 100%;
+    border-radius: 0.25rem;
+    margin-bottom: 0.3rem;
+}
+
+.post-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.activity-icons div img{
+    width: 1.1rem;
+    margin-right: 0.6rem;
+}
+.activity-icons div{
+    display: inline-flex;
+    align-items: center;
+    margin-right: 1.9rem;
+}
+.post-profile-icon{
+    display: flex;
+    align-items: center;
+}
+.post-profile-icon img{
+    width: 1.25rem;
+    border-radius: 50%;
+    margin-right: 0.3rem;
+}
+.post-row a{
+    color: #9a9a9a;
+}
+
+.load-more{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid #9a9a9a;
+    color: #1f1414;
+    background: transparent;
+    border-radius: 0.25rem;
+}
+.footer{
+    text-align: center;
+    margin-top: 0.8rem;
+    color: #9a9a9a;
+    width: 100%;
+    font-family: monospace;
+    font-size: 1.25rem;
 }
