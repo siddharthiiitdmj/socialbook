@@ -4,6 +4,11 @@ function settingMenuToggle(){
     settingmenu.classList.toggle("settings-height");
 }
 
+var leftnavmob = document.querySelector(".left-sidebar");
+function leftNavToggle(){
+    leftnavmob.classList.toggle("left-sidebar-mob");
+}
+
 var darkBtn = document.getElementById("dark-btn");
 
 darkBtn.onclick = function(){
